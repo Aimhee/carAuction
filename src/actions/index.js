@@ -1,19 +1,18 @@
 import * as types from './ActionTypes';
 
-function imcreament(){
+export function increment(){
     return{
-    type: types.INCREAMENT    
-    }
-};
-
-function dmcreament(){
-    return{
-    type: types.DECREAMENT    
+    type: types.INCREMENT    
+    };
 }
-};
-function setColor(){
+
+export function decrement(){
+    return{
+    type: types.DECREMENT    
+    };
+}
+export function setColor(){
     return{
     type: types.SET_COLOR    
+    };
 }
-};
-
