@@ -11,8 +11,10 @@ export function decrement(){
     type: types.DECREMENT    
     };
 }
-export function setColor(){
+
+export function setColor(color){
     return{
-    type: types.SET_COLOR    
+    type: types.SET_COLOR,
+    color    
     };
 }

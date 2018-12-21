@@ -10,7 +10,7 @@ class Control extends Component {
 
     static defaultProps={
         onPlus:()=>createWarning('onPlus'),
-        onSubtrack:()=>createWarning('onSubtract'),
+        onSubtract:()=>createWarning('onSubtract'),
         onRandomizeColor:()=>createWarning('onRandomizeColor')
     }
 
@@ -18,7 +18,7 @@ class Control extends Component {
         return (
             <div>
                 <button onClick={this.props.onPlus}>+</button>
-                <button onClick={this.props.onSubtrack}>-</button>
+                <button onClick={this.props.onSubtract}>-</button>
                 <button onClick={this.props.onRandomizeColor}>RandomSize Color</button>
             </div>
         )
@@ -27,7 +27,7 @@ class Control extends Component {
 
 Control.PropTypes = {
     onPlus:PropTypes.func,
-    onSubtrack:PropTypes.func,
+    onSubtract:PropTypes.func,
     onRandomizeColor:PropTypes.func                    
 };
 
